@@ -6,7 +6,7 @@
 
 ### 1.1.1 싱글톤 패턴
 
-![IMG_4C2990C055A9-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/076de502-2087-4778-835b-58059ecd4bbf/IMG_4C2990C055A9-1.jpeg)
+![IMG_4C2990C055A9-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/df6b6dd7-b781-44c1-818a-91fbcd79c5ce)
 
 - 하나의 클래스에 오직 하나의 인스턴스만 가지는 패턴
 - 하나의 인스턴스를 만들어 놓고 해당 인스턴스를 다른 모듈들이 공유하며 사용
@@ -25,7 +25,7 @@
         
 - 의존성 주입(DI, Dependency Injection)
     
-    ![IMG_60186F2C7222-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/9a107f09-a63f-4f53-840a-66b59197c2fc/IMG_60186F2C7222-1.jpeg)
+    ![IMG_60186F2C7222-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/d8be21be-94e8-4e13-9a07-4f46bb4749b4)
     
     - 모듈 간의 결합을 조금 더 느슨하게 만들어 해결 가능
     - 메인 모듈이 ‘직접’ 다른 하위 모듈에 대한 의존성을 주기보다는 중간에 `의존성 주입자`(dependency injector)가 이 부분을 가로채 메인 모듈이 ‘간접’적으로 의존성을 주입하는 방식
@@ -42,7 +42,7 @@
 
 ### 1.1.2 팩토리 패턴
 
-![IMG_329ED1A24237-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/3f131a10-cacc-4c9c-9564-71b3f8c5c32c/IMG_329ED1A24237-1.jpeg)
+![IMG_329ED1A24237-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/0ce1b7a0-3742-446a-971f-072640cb43cb)
 
 - 객체를 사용하는 코드에서 **객체 생성 부분**을 떼어내 추상화한 패턴이자
 - 상속 관계에 있는 두 클래스에서 상위 클래스가 중요한 뼈대를 결정하고,
@@ -59,8 +59,8 @@
     
     ⇒ 하위 클래스를 먼저 만들고 상위를 만드네?
     
-    ![IMG_5CDFF284B63F-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/2e8bce2f-f3bc-4e38-b0c2-99a2ad30168c/IMG_5CDFF284B63F-1.jpeg)
-    
+    ![IMG_5CDFF284B63F-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/e5080e6f-c44f-40cf-88f0-7c8af5ecf499)
+
     - CoffeeFactory 라는 상위 클래스가 중요한 뼈대를 결정
     LatteFactory 하위 클래스가 구체적 내용 결정
     - 의존성 주입이라고도 볼 수 있다.
@@ -68,18 +68,18 @@
 
 ### 1.1.3 전략 패턴 (Strategy Pattern)
 
-![IMG_7C746B6979D7-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/f7c300f1-836e-4430-a91f-7bb0e755e83e/IMG_7C746B6979D7-1.jpeg)
+![IMG_7C746B6979D7-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/a46f48d7-fc10-4f17-b0da-e94b5a87776a)
 
 - 정책 패턴 (policy pattern)이라고도 함
 - 객체의 행위를 바꾸고 싶은 경우 ‘직접’ 수정하지 않고 전략이라고 부르는 `캡슐화한 알고리즘`을 컨텍스트 안에서 바꿔주면서 상호 교체가 가능하게 만드는 패턴
 
 ### 1.1.4 옵저버 패턴
 
-![IMG_1F8683E3BD1D-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/99ca7eaa-dd60-4879-9251-05a368c74c6d/IMG_1F8683E3BD1D-1.jpeg)
+![IMG_1F8683E3BD1D-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/712b6471-6ca0-42ed-afaa-bbb9a7af0829)
 
 객체와 주체가 분리되어 있는 옵저버 패턴
 
-![IMG_92E7DF5E6EF6-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/e0ecf684-674e-4767-8b8e-241ab01f9b8f/IMG_92E7DF5E6EF6-1.jpeg)
+![IMG_92E7DF5E6EF6-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/65e9fc6e-3168-40da-b3e9-09ccdc6637ab)
 
 객체와 주체가 합쳐진 옵저버 패턴
 
@@ -88,11 +88,11 @@
 - 주체: 객체의 상태 변화를 보고 있는 관찰자
 - 옵저버: 객체의 상태 변화에 따라 전달되는 메서드 등을 기반으로 ‘추가 변화 사항’이 생기는 객체들을 의미
 
-![트위터의 옵저버 패턴](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/24bf6763-5a4d-40c2-9013-36159484caf7/IMG_92E7DF5E6EF6-1_2.jpeg)
+![IMG_92E7DF5E6EF6-1 2](https://github.com/MaryJo-github/CS-Study/assets/124643545/defdd5de-e2f3-49d9-8413-c450c2abb049)
 
 트위터의 옵저버 패턴
 
-![옵저버 패턴 구조](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/23a1c2f4-adec-454f-a220-121b15e629b5/IMG_C024E59AB960-1.jpeg)
+![IMG_C024E59AB960-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/98a4631d-685a-4a75-b9e0-6c66ae2b948e)
 
 옵저버 패턴 구조
 
@@ -100,16 +100,16 @@
 
 - 프록시 패턴(proxy pattern)
     
-    ![IMG_CEEAB057F606-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/4052fa43-9ee2-4e8c-8dd7-c628c4ba5bb0/IMG_CEEAB057F606-1.jpeg)
-    
+    ![IMG_CEEAB057F606-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/acea5671-9dbf-4b50-ac16-89cc9409cebe)
+
     - 대상 객체(subject)에 접근하기 전 그 접근에 대한 흐름을 가로채 대상 객체 앞단의 인터페이스 역할을 하는 디자인 패턴
     - 객체의 속성, 변환 등을 보완하며 보완, 데이터 검증, 캐싱, 로깅에 사용한다.
     - 프록시 객체로 쓰이기도 하지만 프록시 서버로도 활용된다.
 - 프록시 서버(proxy server)
     - 서버와 클라이언트 사이에서 클라이언트가 자신을 통해 다른 네트워크 서비스에 간접적으로 접속할 수 있게 해주는 컴퓨터 시스템이나 응용 프로그램
         
-        ![nginx를 이용한 프록시 서버](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/254bdf89-23cd-473d-8bc3-bb207e778ab4/IMG_FBC0D1A477BC-1.jpeg)
-        
+        ![IMG_FBC0D1A477BC-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/fc1f7f2c-2ea3-4776-a2d4-500f2acabf00)
+
         nginx를 이용한 프록시 서버
         
     - nginx를 프록시 서버로 둬서 실제 포트를 숨길 수 있고,
@@ -117,7 +117,7 @@
 
 ### 1.1.6 이터레이터 패턴 (Iterator Pattern)
 
-![IMG_AB4F84E3FCB7-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/2bf63c4b-5b75-4a88-b811-4ee83e488f71/IMG_AB4F84E3FCB7-1.jpeg)
+![IMG_AB4F84E3FCB7-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/8af7a3c1-e263-4637-9442-a1b532a45dea)
 
 - 이터레이터(iterator)를 사용하여 컬렉션(collection)의 요소들에 접근하는 디자인 패턴
 - 순회 가능한 여러 가지 자료형의 구조와는 상관없이
@@ -130,7 +130,7 @@
 
 ### 1.1.8 MVC 패턴
 
-![IMG_6C321DCEFB1C-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/a81b0f93-97fc-45f7-a231-42456f5076e4/IMG_6C321DCEFB1C-1.jpeg)
+![IMG_6C321DCEFB1C-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/5c9d8ba0-5ee0-420a-953f-75e051330fb6)
 
 - 애플리케이션의 구성 요소를 세 가지 Model, View, Controller로 구분
 - 개발 프로세스에서 각각의 구성 요소에만 집중해서 개발 가능
@@ -158,7 +158,7 @@ Controller
 
 ### 1.1.9 MVP 패턴
 
-![IMG_A4E9421552F0-1.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/095b4c47-4479-499a-822f-b52c09695697/IMG_A4E9421552F0-1.jpeg)
+![IMG_A4E9421552F0-1](https://github.com/MaryJo-github/CS-Study/assets/124643545/a51d9a08-b226-40b9-8e41-6c59309139dd)
 
 - MVC 패턴으로부터 파생
 - Controller가 프레젠터(Presenter)로 교체된 패턴
@@ -166,7 +166,7 @@ Controller
 
 ### 1.1.10 MVVM 패턴
 
-![IMG_A4E9421552F0-1 2.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/79e973e3-522f-4667-889d-674c6ac812e4/f1f8c2a0-cdfb-4cab-a8c7-2eb055778f25/IMG_A4E9421552F0-1_2.jpeg)
+![IMG_A4E9421552F0-1 2](https://github.com/MaryJo-github/CS-Study/assets/124643545/b6289db2-d44a-4427-951c-ecd1d98d290d)
 
 - MVC의 Controller가 뷰모델(View Model)로 바뀐 패턴
 - 뷰모델 → 뷰를 더 추상화한 계층
