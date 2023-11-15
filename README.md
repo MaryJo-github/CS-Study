@@ -28,6 +28,6 @@
 
 ## 🧸 멤버 소개
 
-| <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/c4357b6a-b695-48cb-8338-df7574aa530b" width=100> | <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/1f73d461-5a21-40db-978d-70f8d8d2a0a4" width=100> | <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/905c80f5-44ce-4530-9f54-37ff6c21a8dc" width=100> |
-|:---:|:---:|:---:|
-| [Dasan](https://github.com/DasanKim) | [Whales](https://github.com/WhalesJin) | [Mary](https://github.com/MaryJo-github) |
+| <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/c4357b6a-b695-48cb-8338-df7574aa530b" width=100> | <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/1f73d461-5a21-40db-978d-70f8d8d2a0a4" width=100> | <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/905c80f5-44ce-4530-9f54-37ff6c21a8dc" width=100> | <img src="https://github.com/MaryJo-github/CS-Study/assets/42026766/905c80f5-44ce-4530-9f54-37ff6c21a8dc" width=100> |
+|:---:|:---:|:---:|:---:|
+| [Dasan](https://github.com/DasanKim) | [Whales](https://github.com/WhalesJin) | [Mary](https://github.com/MaryJo-github) | [Kyungmin](https://github.com/YaRkyungmin) |
