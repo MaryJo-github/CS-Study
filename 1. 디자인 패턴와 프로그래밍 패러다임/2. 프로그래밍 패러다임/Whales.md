@@ -2,8 +2,6 @@
 
 - 정의: 프로그래밍의 관점을 갖게 해주는 역할을 하는 **개발 방법론**
     
-    <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/f8f4ebdb-cd45-4e5c-ab81-6e8728964255" width = "300">
-
 **명령형 VS 선언형**
 
 - 명령형- HOW | 선언형 - WHAT
