@@ -2,7 +2,6 @@
 
 - 네트워크: 노드(node)와 링크(link)가 서로 연결되어 있거나 연결되어 있으며 리소스를 공유하는 집합
     
-    <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/b76045f1-7884-46dc-a4fa-b19767d8cec8" width = 250> <br>
     - 노드: 서버, 라우터, 스위치 등 네트워크 장치
     - 링크: 유선 또는 무선
     
@@ -17,16 +16,12 @@
     - 좋은 보안을 갖춘다
 - 처리량(throughput)
     
-    <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/944fd4fb-c5d0-40d6-a4a0-02a4cfea79b2" width = 400> <br>
-    
     - 링크를 통해 전달 되는 단위 시간당 데이터양
     - 프로그램은 함수로 이루어진 것이다.
     - 단위: bps(bits per second) 초당 전송 또는 수신되는 비트 수
     - 트래픽, 네트워크 장치 간의 대역폭, 네트워크 중간에 발생하는 에러, 장치의 하드웨어 스펙 등에 영향을 받는다.
     * 대역폭 : 주어진 시간동안 네트워크 연결을 통해 흐를 수 있는 최대 비트 수
 - 지연 시간(latency)
-    
-    <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/4ce248c5-061a-4557-8b90-e50829702536" width = 350> <br>
     
     - 요청이 처리되는 시간
     - 어떤 메시지가 두 장치 사이를 왕복하는 데 걸린 시간
@@ -41,15 +36,11 @@
 - 토폴로지
     - 트리(tree) 토폴로지
 
-        <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/a4b7b7f4-8549-4df6-b72e-450e27b1531e" width = 250> <br>
-        
         - 계층형 토폴로지
         - 트리형태로 배치한 네트워크 구성
         - 장점: 노드의 추가, 삭제가 쉽다
         - 단점: 특정 노드에 트래픽이 집중될 때 하위 노드에 영향을 끼칠 수 있다.
     - 버스(bus) 토폴로지
-        
-        <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/60ecc24a-abe6-4c69-af2e-4575bdc0a733" width = 250> <br>
         
         - 중앙 통신 회선 하나에 여러 개의 노드가 연결되어 공유
         - 근거리 통신망(LAN)에서 사용
@@ -59,17 +50,11 @@
             <aside>
             💡 스푸핑
             
-            <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/4866bacd-1f54-4619-b6fb-383db06f44d1" width = 350> <br>
-
-            
             - LAN 상에서 송신부의 패킷을 송신과 관련 없는 다른 호스트에 가지 않도록 하는 스위칭 기능을 마비시키거나 속여서 특정 노드에 해당 패킷이 오도록 처리하는 것
             - 그림을 보면 올바르게 수신부로 가야할 패킷이 악의적인 노드에 전달 되게 된다.
             </aside>
             
     - 스타(star) 토폴로지
-        
-        <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/bdfc16f7-49cf-45e3-9315-ca0bc0be496b" width = 250> <br>
-
         
         - 중앙에 있는 노드에 모두 연결 네트워크 구성
         - 장점
@@ -80,9 +65,6 @@
             - 중앙 노드 장애 발생 시 전체 내트워크 사용 불가
             - 설치 비용 고가
     - 링(ring)형 토폴로지
-        
-        <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/5b29611b-39fa-4f33-b066-b56bc4fbe796" width = 250> <br>
-
         
         - 각각의 노드가 양 옆의 두 노드와 연결하여 전체적으로 고리처럼 하나의 연속된 길을 통해 통신을 하는 망 구성 방식
         - 데이터는 노드에서 노드로 이동
@@ -95,9 +77,6 @@
             - 네트워크 구성 변경 어렵다.
             - 회선 장애 발생 시 전체 네트워크에 크게 영향을 준다.
     - 메시(mesh) 토폴로지
-        
-        <img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/9e3fa773-e06b-4897-ad43-6074887b9ed4" width = 250> <br>
-
         
         - 망형 토폴로지, 그물망처럼 연결
         - 장점
@@ -117,8 +96,6 @@
     - 네트워크 토폴로지와 경로를 확인하여 회선을 추가하는 방법 등으로 병목 현상 해결 가능
 
 ### 2.1.3 네트워크 분류
-
-<img src = "https://github.com/MaryJo-github/CS-Study/assets/124643545/1d269e5e-5c34-41cf-9880-986afec415fa" width = 400> <br>
 
 - 규모를 기반으로 분류
     - LAN(Local Area Network)
