@@ -1,13 +1,18 @@
 # TCP/IP 4계층 모델
 **인터넷 프로토콜 스위트(internet protocol suite)**
-    - 인터넷에서 컴퓨터들이 서로 정보를 주고 받는 데 쓰이는 프로토콜의 집합
-    - 이를 TCP/IP 4계층 모델로 설명하거나 OSI 7계층 모델로 설명하기도 함
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/6587bed7-33cd-4e10-a344-eb2fb9bfcb39/Untitled.png)
+- 인터넷에서 컴퓨터들이 서로 정보를 주고 받는 데 쓰이는 프로토콜의 집합
+- 이를 TCP/IP 4계층 모델로 설명하거나 OSI 7계층 모델로 설명하기도 함
 
 <br>
 
 ## 📍TCP/IP 4 계층 모델
+| TCP/IP 모델 | 개요 | Protocol and services | 특징 | PDU |
+| --- | --- | --- | --- | --- |
+| Application | 웹서비스, 이메일 등 서비스를 실질적으로 제공 | FTP, HTTP, SSH, SMTP, DNS 등 | - | 메시지 |
+| Transport | 송신자와 수신자를 연결하는 통신 서비스 제공 | TCP, UDP | 연결 지향 데이터 스트림 지원, 신뢰성, 흐름 제어 제공 | 세그먼트(TCP), 데이터그램(UDP) |
+| Network(Internet) | 네트워크 패킷을 IP주소로 지정된 목적지로 전송 | IP, ARP, ICMP | 비연결형적(상대방이 제대로 받았는지 보장하지 않음) | 패킷 |
+| Network Interface | 실질적으로 데이터를 전달하며 장치 간에 신호를 주고 받는 규칙을 정하는 계층 | Ethernet, 유선LAN/무선LAN | - | 프레임(데이터링크), 비트(물리) |
+
 ### 1. Application(애플리케이션) 계층
 - 웹 서비스, 이메일 등 `서비스를 실질적으로 사람들에게 제공`하는 계층
 - FTP, HTTP, SSH, SMTP, DNS 등 응용 프로그램이 사용되는 프로토콜 계층
@@ -44,8 +49,6 @@
 - TCP는 이 과정이 있음 → 신뢰성이 있는 계층
 - UDP는 이 과정이 없음 → 신뢰성이 없는 계층
 
-![이미지 출처: https://medium.com/@kusal95/tcp-3-way-handshake-process-1fd9a056a2f4](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/bc044498-1fb9-4c99-9dc6-a747ddd68d43/Untitled.png)
-
 1. **SYN 단계**
     - 클라이언트는 서버에 **클라이언트의 ISN을 담아 SYN 전송**
     - ISN: 새로운 TCP 연결의 첫번째 패킷에 할당된 임의의 **시퀀스 번호**를 말하며 이는 장치마다 다를 수 있음
@@ -54,15 +57,12 @@
 3. **ACK 단계**
     - 클라이언트는 **서버의 ISN + 1한 값인 승인번호를 담아 ACK를 서버에 전송**
 
-> SYN: Synchronization. 연결 요청 플래그
-ACK: Acknowledgement. 응답 플래그
-ISN: Initial Sequence Numbers. 초기 네트워크 연결을 할 때 할당된 32비트 고유 시퀀스 번호
-> 
+> SYN: Synchronization. 연결 요청 플래그 <br>
+> ACK: Acknowledgement. 응답 플래그 <br>
+> ISN: Initial Sequence Numbers. 초기 네트워크 연결을 할 때 할당된 32비트 고유 시퀀스 번호
 
 #### 🔎 TCP 연결 해제 과정(4-Way Handshake)
 - 연결 해제할 때는 4-way handshake 과정 발생
-
-![이미지출처: https://www.geeksforgeeks.org/tcp-connection-termination/](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/056cbdcd-c69a-491b-8a3f-6af69198740c/Untitled.png)
 
 1. 클라이언트  → **FIN** →  서버
     - 클라이언트가 연결을 닫으려고 할 때 **FIN**으로 설정된 세그먼트 전송
@@ -101,6 +101,13 @@ ISN: Initial Sequence Numbers. 초기 네트워크 연결을 할 때 할당된 3
 - 이를 데이터 링크 계층과 물리 계층으로 나누기도 함
     - 데이터 링크 계층: ‘이더넷 프레임’을 통해 에러 확인, 흐름 제어, 접근 제어를 담당하는 계층
     - 물리 계층: 무선 LAN과 유선 LAN을 통해 0과 1로 이루어진 데이터를 보내는 계층
+ 
+|  | 유선LAN |  | 무선LAN |  |
+| --- | --- | --- | --- | --- |
+| 통신 방식 | 전이중화 통신 | - 동시에 송수신 가능<br>- 송신로와 수신로가 각각 나뉘어 있음<br>- 충돌가능성 없음 | 반이중화 통신 | - 동시 통신 불가<br>- 한 번에 한 방향만 통신 가능<br>- 충돌 방지 시스템 필요 |
+|  | CSMA/CD | 데이터를 보낸 이후 충돌이 발생한다면 일정 시간 이후에 재전송 | CSMA/CA | 데이터를 보내기 전에 캐리어 감지 등으로 사전에 가능한 한 충돌 방지 |
+| 케이블 및 주파수 | 트위스트 페어 케이블(TP케이블) | 구리선, UTP/STP | 2.4GHz | 장애물에 강함, 전파 간섭 자주 일어남 |
+|  | 광섬유 케이블 | 광섬유, 장거리 및 고속 통신 | 5GHz | 사용 가능한 채널 수 많고 동시에 사용 가능 |
 
 #### 🔎 유선 LAN(IEEE802.3)
 - 전이중화 통신(full duplex) 사용
@@ -162,9 +169,6 @@ ISN: Initial Sequence Numbers. 초기 네트워크 연결을 할 때 할당된 3
 
 #### 🔎 이더넷 프레임
 - 데이터 링크 계층은 이더넷 프레임을 통해 전달받은 데이터의 에러를 검출하고 캡슐화하며 다음과 같은 구조를 가짐
-
-![이미지 출처: 위키백과](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/d5b58be2-288f-4f32-bf9f-3acdf5c7a6b9/Untitled.png)
-
 - Preamble: 이더넷 프레임이 시작임을 알림
 - SFD(Start Frame Delimiter): 다음 바이트부터 MAC 주소 필드가 시작됨을 알림
 - DMAC, SMAC: 수신, 송신 MAC 주소
@@ -179,18 +183,12 @@ ISN: Initial Sequence Numbers. 초기 네트워크 연결을 할 때 할당된 3
 
 ### 계층 간 데이터 송수신 과정
 #### 캡슐화
-
-![이미지 출처: [https://velog.io/@alkwen0996/네트워크-데이터-송수신-및-캡슐화-비캡슐화](https://velog.io/@alkwen0996/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%A1%EC%88%98%EC%8B%A0-%EB%B0%8F-%EC%BA%A1%EC%8A%90%ED%99%94-%EB%B9%84%EC%BA%A1%EC%8A%90%ED%99%94)](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/4247915e-2382-412f-9127-5c028a7214a7/Untitled.png)
-
 - 상위 계층의 헤더와 데이터를 하위 계층의 데이터 부분에 포함시키고 해당 계층의 **헤더를 삽입하는 과정**
 - **세그먼트/데이터그램화**: 애플리케이션 계층의 데이터 → 전송 계층 전달되면서 **TCP(L4)**가 붙게 됩니다.
 - **패킷화**: 전송계층 → 인터넷 계층으로 가면서 **IP(L3) 헤더**가 붙음
 - **프레임화**: 인터넷계층 → 링크계층 전달되면서 **프레임 헤더와 프레임 트레일러**가 붙음
 
 #### 비캡슐화
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/cec8ae2f-c88f-4e65-86d2-6c92d30fbf60/Untitled.png)
-
 - 하위 계층에서 상위 계층으로 가며 각 계층의 헤더 부분을 제거하는 과정
 - 프레임화된 데이터는 패킷화 → 세그먼트/데이터그램화 → 메시지화됨
 - 그 이후 최종적으로 사용자에게 애플리케이션의 PDU인 메시지로 전달됨
