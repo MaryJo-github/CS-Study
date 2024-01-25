@@ -1,3 +1,4 @@
+# [Sesson12] 프로세스와 스레드 💻
 ![](https://velog.velcdn.com/images/min3783/post/70f7eddc-0570-4593-8c2e-032b70fbc427/image.png)
 - 프로세스(process)는 컴퓨터에서 실행되고 있는 프로그램을 말하며, CPU 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰임
 - 스레드는 프로세스 내 작업의 흐름을 지칭함
