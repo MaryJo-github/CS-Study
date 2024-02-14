@@ -41,7 +41,7 @@
 <br>
 
 ## 📍용어
-<img src= "https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/98049fab-21d9-4ab5-a5fc-6b96557024d2/Untitled.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Relational_database_terms.svg/350px-Relational_database_terms.svg.png">
 
 ### 속성(attribute) - 필드
 - 릴레이션에서 관리하는 구체적이며 고유한 이름을 갖는 정보
@@ -68,7 +68,7 @@
 ## 📍키
 - 테이블 간의 관계를 조금 더 명확하게 하고 테이블 자체의 인덱스를 위해 설정된 장치
 
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/75b55970-ef5f-4ee9-a5f0-29d8a7486762/Untitled.png">
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F24XGL%2Fbtrq4vNY1Jl%2FZ54XGiRbdtjXT0Da7TwOo0%2Fimg.png">
 
 - **슈퍼키**: 각 레코드를 유일하게 식별할 수 있는 유일성을 만족하는 키의 집합
     - **후보키**: 유일성과 최소성을 만족하는 키의 집합. 즉 슈퍼키 중에서 최소성 만족하는 키
