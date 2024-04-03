@@ -17,7 +17,7 @@
 <br>
 
 ## 📍시간 복잡도의 속도 비교
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/96e7f510-fb29-4103-8fec-3e19fa5ac309/e899dba5-e2b8-495e-ae6a-9b6f5cea8f4b/Untitled.png">
+<img src="https://github.com/MaryJo-github/CS-Study/assets/106504779/95eb2b03-b5a7-4cb6-8058-72dc10f13581" width=500>
 
 <br>
 
